@@ -14,7 +14,7 @@ const cartSlice = createSlice({
             const existingItem = state.items.find((item)=> item.id === newItem.id)
             if(existingItem){
                 existingItem.quantity++
-                existingItem.price += newItem.price
+                existingItem.totalPrice += newItem.price
             } else {
                 state.items.push({
                     id: newItem.id,

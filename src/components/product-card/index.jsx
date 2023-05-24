@@ -4,11 +4,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { cartActions } from '../../store/cart/cartSlice'
 
 const ProductCard = () => {
-    const cart = useSelector((state) => state.cart.items)
     const dispatch = useDispatch()
-    console.log(cart)
+    // const cart = useSelector((state) => state.cart.items)
+    // console.log(cart)
     const addToCart = () => {
-        dispatch(cartActions.addToCart({id: 1, title: "test", price: 100}))
+        dispatch(cartActions.addToCart({id: 1, title: "test", price: 10}))
     }
     return (
         <div className="mt-10">
